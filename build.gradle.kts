@@ -11,7 +11,9 @@ repositories {
         name = "papermc"
         url = uri("https://repo.papermc.io/repository/maven-public/")
     }
+    maven { url = uri("https://repo.panda-lang.org/releases") }
     maven("https://jitpack.io")
+    maven("https://repo.okaeri.cloud/releases")
 }
 
 dependencies {
@@ -23,6 +25,8 @@ dependencies {
 
     implementation("com.github.xKrisSx.aaapi:core:1.0.1")
     implementation("com.github.xKrisSx.aaapi:guice:1.0.1")
+
+    implementation("eu.okaeri:okaeri-configs-yaml-snakeyaml:6.1.0-beta.4")
 }
 
 kotlin {
