@@ -1,0 +1,5 @@
+name: 404lobby
+version: 1.0.0
+main: dev.p2tch.lobby.PluginBootstrap
+description: A lightweight, fully customizable lobby solution engineered for modern Minecraft servers.
+website: https://github.com/p2tch/404lobby/
