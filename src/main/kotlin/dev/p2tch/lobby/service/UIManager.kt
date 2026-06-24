@@ -14,10 +14,13 @@ class UIManager @Inject constructor(
         val tabListConfiguration = generalConfiguration.tabList
 
         if (tabListConfiguration.enabled) {
+            val header = tabListConfiguration.headerLines.joinToString("<br>")
+            val footer = tabListConfiguration.footerLines.joinToString("<br>")
+
             tabListService.show(
                 player,
-                tabListConfiguration.header.toMiniMessage(),
-                tabListConfiguration.footer.toMiniMessage()
+                header.toMiniMessage(),
+                footer.toMiniMessage()
             )
         }
     }
@@ -26,11 +29,14 @@ class UIManager @Inject constructor(
         val tabListConfiguration = generalConfiguration.tabList
 
         if (tabListConfiguration.enabled) {
+            val header = tabListConfiguration.headerLines.joinToString("<br>")
+            val footer = tabListConfiguration.footerLines.joinToString("<br>")
+
             Bukkit.getOnlinePlayers().forEach { player ->
                 tabListService.show(
                     player,
-                    tabListConfiguration.header.toMiniMessage(),
-                    tabListConfiguration.footer.toMiniMessage()
+                    header.toMiniMessage(),
+                    footer.toMiniMessage()
                 )
             }
         }

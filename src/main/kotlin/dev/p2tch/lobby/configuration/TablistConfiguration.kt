@@ -5,6 +5,18 @@ import eu.okaeri.configs.OkaeriConfig
 class TablistConfiguration: OkaeriConfig() {
     var enabled: Boolean = false
 
-    var header: String = "404lobby"
-    var footer: String = "github.com/p2tch/404lobby"
+    var headerLines: List<String> = listOf(
+        "",
+        "<#ff7575>404lobby",
+        "",
+        "<gray> A lightweight, fully customizable lobby solution engineered for",
+        "<#ff7575>modern Minecraft servers.",
+        ""
+    )
+
+    var footerLines: List<String> = listOf(
+        "",
+        "<#ff7575>github.com/p2tch/404lobby",
+        ""
+    )
 }
