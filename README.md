@@ -48,6 +48,7 @@
 | Scoreboard & tab customization    | In progress |
 | Jumppads                          | In progress |
 | GUI pattern system (config-based) | In progress |
+| Gradle multi module               | In progress |
 
 ---
 
