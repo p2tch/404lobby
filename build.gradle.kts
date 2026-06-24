@@ -14,6 +14,7 @@ repositories {
     maven { url = uri("https://repo.panda-lang.org/releases") }
     maven("https://jitpack.io")
     maven("https://repo.okaeri.cloud/releases")
+    maven("https://repo.eternalcode.pl/releases")
 }
 
 dependencies {
@@ -27,6 +28,8 @@ dependencies {
     implementation("com.github.xKrisSx.aaapi:guice:1.0.1")
 
     implementation("eu.okaeri:okaeri-configs-yaml-snakeyaml:6.1.0-beta.4")
+
+    implementation("com.eternalcode:multification-paper:1.2.4")
 }
 
 kotlin {
