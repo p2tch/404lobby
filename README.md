@@ -40,15 +40,15 @@
 
 ## 💡 TODO
 
-| Feature                           | Status      |
-|-----------------------------------|-------------|
-| Admin commands                    | In progress |
-| Welcome messages                  | In progress |
-| Plugin configuration system       | In progress |
-| Scoreboard & tab customization    | In progress |
-| Jumppads                          | In progress |
-| GUI pattern system (config-based) | In progress |
-| Gradle multi module               | In progress |
+| Feature                                       | Status      |
+|-----------------------------------------------|-------------|
+| Admin commands                                | In progress |
+| Welcome messages                              | In progress |
+| Plugin configuration system                   | In progress |
+| Scoreboard & tab customization + text caching | In progress |
+| Jumppads                                      | In progress |
+| GUI pattern system (config-based)             | In progress |
+| Gradle multi module                           | In progress |
 
 ---
 
