@@ -11,7 +11,7 @@ class CommandLoader: ClassTypeLoader() {
         RegisteredCommand::class.java
 
     override fun process(clazz: Class<*>, instance: Any) {
-        instances.add(instances)
+        instances.add(instance)
     }
 
     fun getInstances(): Set<Any> {
