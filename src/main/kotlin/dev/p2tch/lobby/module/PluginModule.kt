@@ -2,6 +2,7 @@ package dev.p2tch.lobby.module
 
 import com.google.inject.AbstractModule
 import dev.p2tch.lobby.PluginBootstrap
+import dev.p2tch.lobby.domain.PluginVersion
 import org.bukkit.plugin.java.JavaPlugin
 
 class PluginModule(
@@ -9,5 +10,10 @@ class PluginModule(
 ): AbstractModule() {
     override fun configure() {
         bind(JavaPlugin::class.java).toInstance(pluginBootstrap)
+        bind(PluginVersion::class.java).toInstance(
+            PluginVersion(
+                pluginBootstrap.pluginMeta.version
+            )
+        )
     }
 }
